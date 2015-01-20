@@ -594,6 +594,14 @@ hr {
 
 /*** END MEDIA QUERIES ***/
 
+img.video  {
+    vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
 /* END HEADER
 ================================================== */
 
