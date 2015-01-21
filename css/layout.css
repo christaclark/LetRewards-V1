@@ -271,7 +271,16 @@ h1.noSubtitle{
 	letter-spacing: 0.1em;
 }
 
-
+.col-sm-4 p {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 0;
+	border: none;
+	text-align: left;
+}
 
 
 h2 {
@@ -665,8 +674,8 @@ body#fullScreen #mainHeader{display:none;}
 #mapWrapper{ height:350px; }
 
 #homeFullScreen {
-	background-image: url('../images/theme-pics/big-city.jpg');
-	/*background-image: url('../images/theme-pics/paralax-1.jpg');*/
+	/*background-image: url('../images/theme-pics/big-city.jpg');
+	background-image: url('../images/theme-pics/paralax-1.jpg');*/
 	height:100%;
 }
 
