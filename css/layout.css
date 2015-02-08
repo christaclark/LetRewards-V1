@@ -31,7 +31,10 @@ Description: layout styles
 ================================================== */
 .navbar {margin-bottom:0;}
 .navbar-default {background:none; border:none;}
-.nav.nav-tabs {margin-bottom:22px;}
+.navbar .nav.pull-right {
+     float: right;
+    margin-right: 98px; /*set margin this way in your custom styesheet*/
+  }
 .btn:active, .btn.active{
 -webkit-box-shadow:none;box-shadow:none
 }
