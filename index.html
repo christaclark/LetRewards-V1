@@ -18,7 +18,7 @@
 		<!-- CSS
 		================================================== -->
 		<!-- Bootstrap  -->
-		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
 		<!-- web font  -->
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
 		<!-- plugin css  -->
@@ -37,12 +37,10 @@
 		<!-- Custom css -->
 		<link type="text/css" rel="stylesheet" href="css/layout.css">
 		<link type="text/css" id="colors" rel="stylesheet" href="css/blue.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/prototype.css">
 		<!-- ORIGINAL CSS <link type="text/css" id="colors" rel="stylesheet" href="css/colors.css"> -->
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 		<script src="js/modernizr-2.6.1.min.js"></script>
-		<!-- Firebase download & plugin -->
-		<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-
 		<!-- Favicons
 		================================================== -->
 		<link rel="shortcut icon" href="images/favicon.png">
@@ -61,72 +59,36 @@
 				<div class="container">
 					<nav class="navbar navbar-default scrollMenu" role="navigation">
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index.html"><img src="images/title.png" alt="Ashley website template"/></a> </div>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<a class="navbar-brand" href="index.html"><img src="images/title.png" alt="letrewards logo"/></a> 
+						</div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
-								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
-									<li><a href="#news"><i class="icon-comment"></i>About</a> </li>
-									<!-- li><a href="#services"><i class="icon-thumbs-up"></i>Services</a> </li-->
-									<li><a href="#about"><i class="icon-star"></i>Mission</a> </li>
-									<li><a href="#team"><i class="icon-users"></i>Team</a> </li>
-									<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
-								</ul>
+								<a class="btn btn-login" type="submit" href="signup.html">Login</a>
+								<a class="btn btn-login" type="submit" href="signup.html">Signup</a>
 							</div>
 
 						</nav>
 					</div>
-				</header>
+			</header>
 				<!-- header -->
-				<!-- content -->
+				<!-- search engine-->
 				<section id="home" data-stellar-background-ratio="0.5">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-7 col-sm-6">
-								<div class="flexslider" id="flexHome">
-									<ul class="slides">
-										<li>
-											<h1>Renters</h1>
-											<h2>Renters-Build a Rental Resume and get Rewards!</h2>
-										</li>
-										<li>
-											<h1>Property owners</h1>
-											<h2>Property Owners-Review and Reward Renters!</h2>
-										</li>
-										<li>
-											<h1>Retailers</h1>
-											<h2>Retailers have consumers to reward and market to!</h2>
-										</li>
-									</ul>
-								</div> 
-							</div>
-							<!--div class="col-lg-5 col-sm-6 hidden-xs">
-								<img src="images/logo.png" alt="LetRewards" class="img-responsive" />
-							</div-->
-						</div>
+							<form class="form-wrapper-cf">
+							        <input type="text" placeholder=" Search for a tenant" required>
+							        <button onclick="location.href='reviews.html'" type="submit">Search</button>
+							</form> 
 					</div>
 				</section>
-				<!-- call to action -->
-				<section class="color4 slice">  
-					<div class="ctaBox ctaBoxFullwidth">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8">
-									<h1>
-										<strong>LetRewards</strong> allows renters to build a rental resume and get rewarded for being great residents! Start building your resume today. 
-									</h1>
-								</div>
-								<div class="col-md-4">
-									<a class="btn btn-lg" title="sing-up" href="#contactSlice" target="blank">
-										<i class="icon-flash"></i> Sign up now!
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- call to action -->
-				<!-- news -->
+
+				
+				
+
+
+				
+
+<!-- 3 clients -->
 
 				<section class="slice" id="news">
 					<div class="container imgHover">
@@ -139,7 +101,7 @@
 							<article class="col-sm-4" data-nekoanim="fadeInLeftBig" data-nekodelay="100">
 
 								<section class="imgWrapper"> 
-									<img src="images/news/renter.png" class="img-responsive" alt="Ashleye template image news" /> 
+									<img src="images/renters.png" class="img-responsive" alt="Ashleye template image news" /> 
 								</section>
 
 								<section class="newsText color4">
@@ -153,7 +115,7 @@
 
 							<article class="col-sm-4" data-nekoanim="fadeInUp" data-nekodelay="200">
 								<section class="imgWrapper"> 
-									<img src="images/news/owner.png" class="img-responsive" alt="snowflake template image news" /> 
+									<img src="images/owner.png" class="img-responsive" alt="snowflake template image news" /> 
 								</section>
 								
 								<section class="newsText color4">
@@ -166,7 +128,7 @@
 
 							<article class="col-sm-4" data-nekoanim="fadeInRightBig" data-nekodelay="300">
 								<section class="imgWrapper"> 
-									<img src="images/news/retailer.png" class="img-responsive" alt="snowflake template image news" /> 
+									<img src="images/retailer.png" class="img-responsive" alt="snowflake template image news" /> 
 								</section>
 								<!--div class="mediaHover">
 									<div class="mask"></div>
@@ -229,103 +191,8 @@
 					</div>
 				</section>
 
-				
-				<div id="paralaxSlice2" data-stellar-background-ratio="0.5">
-					<div class="maskParent">
-						<div class="paralaxMask"></div>
-						<div class="paralaxText container">
-							<i class="icon-mobile iconBig"></i><i class="icon-tablet iconBig"></i><i class="icon-laptop iconBig"></i><i class="icon-desktop iconBig"></i>
-							<h3 class="bigTitle">Renters get rated by property owners and get rewarded by retailers based on their reviews!</h3>
-						</div>
-					</div>
-				</div>
 
 				
-
-				
-				<section class="slice" id="team">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12">
-								<h1>Meet our team</h1>
-								<h2 class="subTitle">We believe in being rewarded!</h2>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<article data-nekoanim="fadeIn" data-nekodelay="100">
-									<div><a href="mailto:txberg@gmail.com" target="_blank"><img src="images/team/karyn.png" alt="" class="img-responsive"/></a></div>
-									<div class="boxContent text-center color4">
-										<h3>Karyn Bergman</h3>
-										<p>Business Development</p>
-									</div>
-									<div class="boxContent text-center"> <a href="mailto:txberg@gmail.com">karyn@letrewards.com</a>
-										<ul class="socialNetwork mt15">
-											<li><a href="https://www.facebook.com/pages/Karyn-Bergman/142523975782440" target="_blank" class="tips" title="" data-original-title="Follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
-											<li><a href="https://twitter.com/karyn_txberg" target="_blank" class="tips" title="" data-original-title="Follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
-											<li><a href="https://plus.google.com/101917755931024757095/about" target="_blank" class="tips" title="" data-original-title="Follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
-											<li><a href="https://www.linkedin.com/in/karynbergman" target="_blank" class="tips" title="" data-original-title="Follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
-											
-										</ul>
-									</div>
-								</article>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<article data-nekoanim="fadeIn" data-nekodelay="300">
-									<div><a href="mailto:bergmangraphics@gmail.com" target="_blank"><img src="images/team/aaron.png" alt="" class="img-responsive"/></a></div>
-									<div class="boxContent text-center color4">
-										<h3>Aaron Bergman</h3>
-										<p>Creative Director</p>
-									</div>
-									<div class="boxContent text-center"> <a href="mailto:bergmangraphics@gmail.co">aaron@letrewards.com</a>
-										<ul class="socialNetwork mt15">
-											<li><a href="https://www.facebook.com/aaron.bergman.758?pnref=lhc" target="_blank" class="tips" title="" data-original-title="Follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="" data-original-title="Follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="" data-original-title="Follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="" data-original-title="Follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
-											
-										</ul>
-									</div>
-								</article>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<article data-nekoanim="fadeIn" data-nekodelay="500">
-									<div><a href="mailto:christamarie.c@gmail.com" target="_blank"><img src="images/team/christa.png" alt="" class="img-responsive"/></a></div>
-									<div class="boxContent text-center color4">
-										<h3>Christa Clark</h3>
-										<p>Front-end Development</p>
-									</div>
-									<div class="boxContent text-center"> <a href="mailto:christamarie.c@gmail.com">christa@letrewards.com</a>
-										<ul class="socialNetwork mt15">
-											<li><a href="https://www.facebook.com/christamarieclark" target="_blank" class="tips" title="" data-original-title="Follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
-											<li><a href="https://twitter.com/christamclark" target="_blank" class="tips" title="" data-original-title="Follow me on Twitter"><i class="icon-twitter-bird iconRounded"></i></a></li>
-											<li><a href="https://plus.google.com/u/0/+ChristaMarieClark/" target="_blank" class="tips" title="" data-original-title="Follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
-											<li><a href="https://www.linkedin.com/in/christamarieclark" target="_blank" class="tips" title="" data-original-title="Follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
-
-							<div class="col-sm-6 col-md-3">
-								<article data-nekoanim="fadeIn" data-nekodelay="700">
-									<div><a href="mailto:bergmangraphics@gmail.com" target="_blank"><img src="images/team/anthony.png" alt="" class="img-responsive"/></a></div>
-									<div class="boxContent text-center color4">
-										<h3>Anthony Bergman</h3>
-										<p>Financial Strategy Consultant</p>
-									</div>
-									<div class="boxContent text-center"> <a href="mailto:bergmangraphics@gmail.co">anthony@letrewards.com</a>
-										<ul class="socialNetwork mt15">
-											<li><a href="#" target="_blank" class="tips" title="Follow me on Facebook">
-													<i class="icon-facebook-1 iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="Follow me on Twitter" target="_blank">		<i class="icon-twitter-bird iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="Follow me on Google+" target="_blank">		<i class="icon-gplus-1 iconRounded"></i></a></li>
-											<li><a href="#" target="_blank" class="tips" title="Follow me on Linkedin" target="_blank">		<i class="icon-linkedin-1 iconRounded"></i></a></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-						</div>
-					</div>
-				</section>
 
 				<div id="paralaxSlice3" data-stellar-background-ratio="0.5" >
 					<div class="maskParent">
@@ -408,7 +275,7 @@
 								<div class="col-sm-6">
 									<div class="footerWidget">
 
-										<h3>LetRewards</h3>
+										<h3>LetRewwards</h3>
 										<address>
 											<p> <i class="icon-location"></i>&nbsp;LetRewards<br/>  
 																	2302 Kerr Trail<br/>   
