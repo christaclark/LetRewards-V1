@@ -615,7 +615,7 @@ img.video  {
 ================================================== */
 
 /* MAIN MENU
-================================================== */
+================================================== 
 .navbar-nav > li > a {
     display: block;
     font-size: 1em;
@@ -634,9 +634,9 @@ img.video  {
 }
 .navbar-nav > li > a i {font-size: 16px; text-align: center;padding: 20px 0 10px 0; color:#ccc;}
 .navbar-nav > li > a:hover i, .navbar-nav > li.active > a i {color:#fff;}
-#mainHeader .pull-right{ float:none !important; }
+#mainHeader .pull-right{ float:none !important; } */
 
-/*** MEDIA QUERIES ***/
+/*** MEDIA QUERIES 
 
 @media(max-width:767px){
 	.navbar-nav > li > a i {
