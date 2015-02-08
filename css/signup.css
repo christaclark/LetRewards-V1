@@ -2,6 +2,7 @@
 	background-image:url('../images/background.jpg');
 	min-height: 700px;
 	min-width: 1000px;
+	float: left;
 }
 
 
